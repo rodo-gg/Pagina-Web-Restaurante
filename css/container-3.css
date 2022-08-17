@@ -1,0 +1,189 @@
+/* MOBILE FIRST */
+/* CONTENIDO 2 */
+.container-3 {
+  background-color: none;
+  border: none;
+  margin-top: 30px;
+}
+.title-3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 10px 0 10px 0;
+  background-color: none;
+}
+.title-3 h2 {
+  font-size: 3em;
+  margin: 10px;
+  background-color: none;
+}
+.title-3 p {
+  background-color: none;
+}
+.scrool-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: none;
+  height: 20vh;
+  width: 100%;
+  gap: 5px;
+
+  overflow: auto;
+}
+.scrool-bar img {
+  width: 45px;
+}
+.scrool-bar .item3 {
+  align-items: center;
+  text-align: center;
+  border: 2px dotted salmon;
+  border-radius: 5px 20px;
+  background-color: none;
+  /*width forzado*/
+  min-width: 80px;
+}
+.scrool-bar p {
+  font-weight: bold;
+}
+.scrool-bar div {
+  display: flex;
+  flex-direction: column;
+}
+.scrool-bar::-webkit-scrollbar {
+  background-color: none;
+  height: 8px;
+}
+.scrool-bar::-webkit-scrollbar-track {
+  margin-inline: 1em;
+  background-color: rgb(206, 206, 206);
+  border-radius: 10px;
+}
+.scrool-bar::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: salmon;
+}
+.menu-cards {
+  display: flex;
+  background-color: none;
+  width: 100%;
+  overflow: auto;
+  gap: 10px;
+  padding: 20px 0;
+}
+.menu-cards .cards {
+  border-radius: 13px;
+  background-color: none;
+  border: none;
+  position: relative;
+  margin-top: 20px;
+}
+.menu-cards .cards p {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(150, 150, 150, 0.62);
+  width: 100%;
+  font-size: 1.2em;
+  padding: 7px 0;
+}
+.menu-cards img {
+  border-radius: 10px;
+  width: 180px;
+  height: 100%;
+}
+.cards p {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.cards span {
+  color: rgb(11, 225, 11);
+}
+.menu-cards::-webkit-scrollbar {
+  background-color: none;
+  height: 8px;
+}
+.menu-cards::-webkit-scrollbar-track {
+  margin-inline: 1em;
+  background-color: rgb(206, 206, 206);
+  border-radius: 10px;
+}
+.menu-cards::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: salmon;
+}
+.icon {
+  display: none;
+}
+
+/* DESKTOP*/
+@media (min-width: 1000px) {
+  .title-3 {
+    background-color: none;
+    padding-bottom: 20px;
+  }
+  .scrool-bar {
+    background-color: none;
+  }
+  .menu-cards {
+    background-color: none;
+  }
+  .xd {
+    border: 2px solid none;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    padding: 15px 0;
+  }
+  .scrool-bar {
+    width: 15vw;
+    height: 39vh;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .scrool-bar .item3 {
+    flex-direction: row;
+    width: 90%;
+    margin: 0 auto;
+    gap: 10px;
+  }
+  .scrool-bar::-webkit-scrollbar {
+    width: 8px;
+  }
+  .menu-cards {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    overflow: hidden;
+    scroll-behavior: smooth;
+  }
+  .menu-cards .cards {
+    padding: 0;
+    margin: 0;
+  }
+  .cards img {
+    width: 250px;
+  }
+  .icon {
+    display: block;
+    padding-left: 550px;
+  }
+  .icon button {
+    font-size: 15px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+  .icon .prev {
+    font-size: 45px;
+    color: salmon;
+    padding: 0 10px;
+  }
+  .icon .next {
+    font-size: 45px;
+    color: salmon;
+  }
+}

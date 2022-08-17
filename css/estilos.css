@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+h1 {
+  font-size: 3.5em;
+}
+h2 {
+  font-size: 2em;
+}
+a,
+p {
+  font-size: 1em;
+}
+/* MOLBILE FIRST */
+header {
+  width: 80%;
+  margin: 20px auto;
+  border: 2px solid none;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding: 0;
+  background-color: none;
+  width: 100%;
+  height: 110px;
+}
+.title {
+  text-align: center;
+}
+span {
+  color: salmon;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-top: 10px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+}
+.navbar button {
+  background-color: white;
+  color: orange;
+  border: solid 1px orange;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+/*CONTENIDO*/
+.container {
+  background-color: none;
+}
+.container .content-1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-color: none;
+  width: 100%;
+  height: 80vh;
+}
+.content-1 h1 {
+  text-align: center;
+}
+.content-1 p {
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+
+  margin: 0 auto;
+  gap: 30px;
+}
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  background-color: orange;
+  color: white;
+}
+/*CONTENIDO 2*/
+.container .content-2 {
+  background-color: none; /*capet basica */
+  width: 100%;
+  height: 100vh;
+
+  display: flex; /*capet intermedia */
+  align-items: center;
+}
+.content-2 .img-content-2 {
+  width: 100%;
+}
+/* CONTENIDO 3 */
+.container-2 {
+  padding: 0;
+  background-color: none;
+}
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 20px 0;
+  margin-top: 40px;
+  gap: 10px;
+}
+.item img {
+  width: 90px;
+  align-items: center;
+}
+.container-2 p {
+  margin: 10px 0 10px 0;
+}
+.container-2 a {
+  color: cyan;
+}
+
+/* DESKTOP */
+@media (min-width: 1000px) {
+  .header {
+    width: 100%;
+    background-color: none;
+  }
+  .menu {
+    background-color: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu .navbar {
+    background-color: none;
+    margin: 0;
+  }
+  .menu .navbar a {
+    margin-right: 20px;
+  }
+  /*contenedor*/
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 80vh;
+    background-color: none;
+  }
+  .container .content-1 {
+    background-color: none;
+    height: 100%;
+  }
+  .content-1 h1 {
+    text-align: left;
+    font-size: 5em;
+  }
+  .content-1 p {
+    text-align: left;
+    font-size: 1.3em;
+  }
+  .content-1 .buttons {
+    margin: 0;
+  }
+  .content-1 .buttons button {
+    font-size: 20px;
+    border-radius: 10px;
+  }
+  .container .content-2 {
+    background-color: none;
+    height: 100%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .container .content-2 .img-content-2 {
+    width: 85%;
+    height: auto;
+  }
+  .container-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+  }
+  .container-2 .item h2 {
+    font-size: 1.4em;
+  }
+}
