@@ -9,3 +9,11 @@ nextB.addEventListener('click', () => {
 prevB.addEventListener('click', () => {
   menuC.scrollLeft -= 200;
 });
+
+// TOGGLE
+const btnSwitch = document.querySelector('.switch');
+
+btnSwitch.addEventListener('click', () => {
+  document.body.classList.toggle('darkMode');
+  btnSwitch.classList.toggle('active');
+});

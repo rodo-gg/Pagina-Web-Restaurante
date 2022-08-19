@@ -1,0 +1,63 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.switch {
+  background-color: none;
+  border: none;
+  border-radius: 100px;
+  cursor: pointer;
+
+  position: relative;
+  display: flex;
+  padding: 0;
+}
+.switch span {
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: block;
+  line-height: 30px;
+  margin: 0;
+}
+.switch::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 100px;
+
+  position: absolute;
+  left: 0;
+  right: unset;
+}
+.active {
+  background-color: salmon;
+}
+.active::after {
+  left: unset;
+  right: 0;
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+/*ESTILIZACION*/
+.darkMode {
+  background-color: #313131;
+  color: white;
+}
+.darkMode a {
+  color: white;
+}
+.darkMode .navbar button {
+  color: white;
+  background-color: orange;
+}
+.darkMode .container-2 {
+  background-color: #525252;
+  border-radius: 20px;
+}
